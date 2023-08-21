@@ -61,8 +61,7 @@ article header p {
 #copyrigth {
   font-size: 16px;
 }
-
-.remove-bullet {
+*/class selector*/ .remove-bullet {
   list-style: none;
 }
 .main-header {
@@ -72,4 +71,28 @@ article header p {
 aside {
   background-color: #f7f7f7;
   border: 5px solid #1098ad;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+/*Styling Links*/
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  background-color: #000;
 }

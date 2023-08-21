@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link href="style.css" rel="stylesheet" />
     <meta charset="UTF-8" />
     <title>The Basic Languege of the Web</title>
   </head>
@@ -12,7 +13,7 @@
     <h3>The Basic Languege of the Web: HTML</h3>
     <h4>The Basic Languege of the Web: HTML</h4>
     -->
-    <header>
+    <header class="main-header">
       <h1>📘 The Code Magazine</h1>
       <nav>
         <a href="Blog.html">Blog</a>
@@ -92,43 +93,47 @@
         <li>To impress friends</li>
         <li>To have fun 😃</li>
       </ul>
+      <p>Hopefully you learned something new here. See you next time!</p>
     </article>
     <aside>
       <h4>Related posts</h4>
       <div>
-        <ul>
+        <ul class="remove-bullet">
           <li>
-            <img src="img/related-1.jpg" 
-            alt="Imagem de uma pessoa codando" 
-            height="75"
-            width="75"
+            <img
+              src="img/related-1.jpg"
+              alt="Imagem de uma pessoa codando"
+              height="75"
+              width="75"
             />
             <a href="#">How to learn Web Development</a>
-            <p>By Jonas</p>
+            <p class="related-author">By Jonas</p>
           </li>
           <li>
-            <img src="img/related-2.jpg" 
-            alt="Imagem de um raio caindo" 
-            height="75" 
-            width="75"
+            <img
+              src="img/related-2.jpg"
+              alt="Imagem de um raio caindo"
+              height="75"
+              width="75"
             />
             <a href="#">The Unknown power of css</a>
-            <p>By Jim Dilon</p>
+            <p class="related-author">By Jim Dilon</p>
           </li>
           <li>
-            <img src="img/related-3.jpg" 
-            alt="Imagem de uma tela de script em java script" 
-            width="75" 
-            heigth="75"
+            <img
+              src="img/related-3.jpg"
+              alt="Imagem de uma tela de script em java script"
+              width="75"
+              heigth="75"
             />
             <a href="#">Why JavaScript is Awsome</a>
-            <p>By Matilda</p>
+            <p class="related-author">By Matilda</p>
           </li>
         </ul>
       </div>
-
     </aside>
-    <footer>Copyright &copy; 2027 by The code magazine.</Copyright1></footer>
-    
+    <footer>
+      <p id="author">Copyright &copy; 2027 by The code magazine.</p>
+    </footer>
   </body>
 </html>
