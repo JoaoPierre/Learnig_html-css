@@ -1,12 +1,48 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
-  font-family: sans-serif;
-  color: #444;
+* {
+  margin: 0;
+  padding: 0;
 }
+
+/*PAGE SECTION*/
+
+body {
+  color: #444;
+  font-family: sans-serif;
+  position: relative;
+  border-top: 5px solid #1098ad;
+}
+
+.container {
+  width: 700px;
+  margin: 5px auto;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+.post-header {
+  margin-bottom: 40px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+  width: 500px;
+}
+
+nav {
+  font-size: 18px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
 h1,
 h2,
 h3 {
@@ -21,11 +57,14 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
+  position: relative;
 }
 
 h3 {
   font-size: 30px;
   background-color: #f7f7f7;
+  margin-bottom: 20px;
 }
 
 h4 {
@@ -35,10 +74,20 @@ h4 {
 }
 p {
   font-size: 22px;
+  line: heigth 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+li {
+  padding: 0 10px;
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 
 li {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
 /*footer p {
@@ -61,16 +110,9 @@ article header p {
 #copyrigth {
   font-size: 16px;
 }
-*/class selector*/ .remove-bullet {
-  list-style: none;
-}
-.main-header {
-  background-color: #f7f7f7;
-}
 
-aside {
-  background-color: #f7f7f7;
-  border: 5px solid #1098ad;
+.remove-bullet {
+  list-style: none;
 }
 
 li:first-child {
@@ -95,4 +137,49 @@ a:hover {
 
 a:active {
   background-color: #000;
+}
+
+/*nav a:link{
+  font-size: 18px
+}*/
+
+.post-image {
+  width: 100%;
+  height: auto;
+}
+
+nav a:link {
+  /*background-color: orange;*/
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+button {
+  padding: 20px;
+  font-size: 22px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h2::after {
+  display: inline-block;
+  content: "TOP";
+  background-color: yellow;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 5px 10px;
+  position: absolute;
+  top: -15px;
+  right: -25px;
 }
